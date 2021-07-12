@@ -1,0 +1,4 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/matsubara0507/go-etcd-sandbox
+gazelle(name = "gazelle")
