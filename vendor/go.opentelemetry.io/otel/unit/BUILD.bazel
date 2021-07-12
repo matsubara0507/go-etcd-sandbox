@@ -1,0 +1,12 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "unit",
+    srcs = [
+        "doc.go",
+        "unit.go",
+    ],
+    importmap = "github.com/matsubara0507/go-etcd-sandbox/vendor/go.opentelemetry.io/otel/unit",
+    importpath = "go.opentelemetry.io/otel/unit",
+    visibility = ["//visibility:public"],
+)

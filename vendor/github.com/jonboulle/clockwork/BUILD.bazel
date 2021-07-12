@@ -1,0 +1,12 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "clockwork",
+    srcs = [
+        "clockwork.go",
+        "ticker.go",
+    ],
+    importmap = "github.com/matsubara0507/go-etcd-sandbox/vendor/github.com/jonboulle/clockwork",
+    importpath = "github.com/jonboulle/clockwork",
+    visibility = ["//visibility:public"],
+)
